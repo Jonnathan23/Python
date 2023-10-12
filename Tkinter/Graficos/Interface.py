@@ -1,3 +1,4 @@
+
 from tkinter import *
 # Ventana
 raiz = Tk()
@@ -5,10 +6,18 @@ raiz.title("Ventana Pepa")
 raiz.iconbitmap("Graficos//pugIco.ico")
 raiz.config(bg="green")
 
+
 # Frame
-nuevoFrame = Frame()
-nuevoFrame.pack(side="bottom", anchor=W)
-nuevoFrame.config(bg="red")
-nuevoFrame.config(width="260", height="80")
+nuevoFrame = Frame(raiz, width="500", height="450")
+nuevoFrame.pack()
+
+# Label
+img = PhotoImage(file="Graficos//capi.gif")
+Label(nuevoFrame, image = img).place(x=50, y = 15)
+
+nuevoLabel = Label(nuevoFrame, text= "Capibara")
+nuevoLabel.place(x= 100,y=275)
+
+
 
 raiz.mainloop()
