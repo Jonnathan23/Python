@@ -1,5 +1,5 @@
 from tkinter import *
-from VentanaJuego import *
+from VentanaJuegoDos import *
 
 class VentanaIn():
     
@@ -32,6 +32,7 @@ class VentanaIn():
     
     def comenzarJuego(self):
         word = self.txtWord.get()
+        word = word.upper()
         phrase = self.generatePhrase(word)
         self.root.destroy()
         print("Iniciando Juego")

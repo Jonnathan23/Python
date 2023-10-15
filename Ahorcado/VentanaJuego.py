@@ -15,10 +15,11 @@ class VentanaJuego:
         self.wordGuess.grid(row=0, column=1, sticky="e", pady=6)
         
         # *Hanged IMG
-        imgHanged = 
+        imgHanged = PhotoImage()
         # *buttons
         widthBt = 5
         heightBt = 2
+        
         # Fila 1
         self.btA = Button(self.framePlay , text="A", width= widthBt, height= heightBt, command=self.comprobateLetter("A"))
         self.btA.grid(row=1, column=0, padx=5, pady=5)
